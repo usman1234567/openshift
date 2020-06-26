@@ -1,0 +1,201 @@
+*, :after, :before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+.btn-circle-gradient .card__overlay {
+	background-color: #a7c338;
+
+}
+.btn-circle-gradient {
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	width: 100px;
+	height: 100px;
+	margin-top:20px;
+}
+.btn-circle-gradient .card__overlay {
+	position: absolute;
+	border-radius: 100%;
+	z-index: 2;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-direction: normal;
+	animation-direction: normal;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards
+}
+.btn-circle-gradient .card__overlay.card__overlay--1 {
+	-webkit-animation-name: stretch-one;
+	animation-name: stretch-one;
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s;
+	top: calc(25%);
+	left: calc(25%);
+	width: 50px;
+	height: 50px;
+	opacity: .6;
+	-webkit-transform: scale(.8);
+	transform: scale(.8)
+}
+.btn-circle-gradient .card__overlay.card__overlay--2 {
+	-webkit-animation-name: stretch-two;
+	animation-name: stretch-two;
+	-webkit-animation-delay: .1s;
+	animation-delay: .1s;
+	top: calc(12.5%);
+	left: calc(12.5%);
+	width: 75px;
+	height: 75px;
+	opacity: .4;
+	-webkit-transform: scale(.5);
+	transform: scale(.5)
+}
+.btn-circle-gradient .card__overlay.card__overlay--3 {
+	-webkit-animation-name: stretch-three;
+	animation-name: stretch-three;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	opacity: .2;
+	-webkit-transform: scale(.4);
+	transform: scale(.4)
+}
+.btn-circle-gradient i[class^=icon-].circle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	z-index: 99;
+	font-size: 1.3em
+}
+/*  SAFARI BROWSERS*/
+@media screen and (-webkit-min-device-pixel-ratio:0){
+    ::i-block-chrome,
+.btn-circle-gradient .card__overlay.card__overlay--1 {
+	width: 100px;
+	height: 100px;
+}
+    ::i-block-chrome,
+.btn-circle-gradient .card__overlay.card__overlay--2 {
+	width: 100px;
+	height: 100px;
+}
+}
+@-webkit-keyframes move-arrow {
+0% {
+margin-top:0
+}
+100% {
+margin-top:5px
+}
+}
+@keyframes move-arrow {
+0% {
+margin-top:0
+}
+100% {
+margin-top:5px
+}
+}
+@-webkit-keyframes stretch-one {
+0% {
+opacity:.6;
+-webkit-transform:scale(.8);
+transform:scale(.8)
+}
+100% {
+opacity:0;
+-webkit-transform:scale(1.4);
+transform:scale(1.4)
+}
+}
+@keyframes stretch-one {
+0% {
+opacity:.6;
+-webkit-transform:scale(.8);
+transform:scale(.8)
+}
+100% {
+opacity:0;
+-webkit-transform:scale(1.4);
+transform:scale(1.4)
+}
+}
+@-webkit-keyframes stretch-two {
+0% {
+opacity:.4;
+-webkit-transform:scale(.5);
+transform:scale(.5)
+}
+100% {
+opacity:0;
+-webkit-transform:scale(1.2);
+transform:scale(1.2)
+}
+}
+@keyframes stretch-two {
+0% {
+opacity:.4;
+-webkit-transform:scale(.5);
+transform:scale(.5)
+}
+100% {
+opacity:0;
+-webkit-transform:scale(1.2);
+transform:scale(1.2)
+}
+}
+@-webkit-keyframes stretch-three {
+0% {
+opacity:.2;
+-webkit-transform:scale(.4);
+transform:scale(.4)
+}
+100% {
+opacity:0;
+-webkit-transform:scale(1.1);
+transform:scale(1.1)
+}
+}
+@keyframes stretch-three {
+0% {
+opacity:.2;
+-webkit-transform:scale(.4);
+transform:scale(.4)
+}
+100% {
+opacity:0;
+-webkit-transform:scale(1.1);
+transform:scale(1.1)
+}
+}
+i[class*=" icon-"].circle, i[class^=icon-].circle {
+	border-radius: 100%
+}
+i[class*=" icon-"].circle, i[class*=" icon-"].rounded, i[class*=" icon-"].squared, i[class^=icon-].circle, i[class^=icon-].rounded, i[class^=icon-].squared {
+	display: inline-block;
+	margin: 0;
+	font-stretch: normal;
+	height: 40px;
+	width: 40px;
+	padding: 11px 0;
+	line-height: 14px;
+	font-size: 14px;
+	text-align: center
+}
+i[class*=" icon-"].circle, i[class*=" icon-"].rounded, i[class*=" icon-"].squared, i[class^=icon-].circle, i[class^=icon-].rounded, i[class^=icon-].squared {
+	border: none
+}
+i[class^="icon-"].rounded, i[class*=" icon-"].rounded, i[class^="icon-"].squared, i[class*=" icon-"].squared, i[class^="icon-"].circle, i[class*=" icon-"].circle {
+	background-color: #a7c338;
+	color: #ffffff;
+	border-color: #a7c338
+}

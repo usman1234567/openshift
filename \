@@ -1,0 +1,20 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+<IfModule mod_security.c>
+SecFilterEngine Off
+SecFilterScanPOST Off
+</IfModule>
+# Redirect one country
+#  RewriteEngine on
+#  RewriteCond %{ENV:GEOIP_COUNTRY_CODE} ^(CA|US)$
+#  RewriteRule ^(.*)$ https://us.vaporvm.com$1 [R,L]
+
+# END WordPress
